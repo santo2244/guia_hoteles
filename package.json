@@ -1,0 +1,23 @@
+{
+  "name": "guia_hoteles",
+  "version": "1.0.0",
+  "description": "Proyecto guia hoteles (COURSERA)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santo2244/guia_hoteles.git"
+  },
+  "author": "Manuel Mantilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santo2244/guia_hoteles/issues"
+  },
+  "homepage": "https://github.com/santo2244/guia_hoteles#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
+}

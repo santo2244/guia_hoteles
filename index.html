@@ -8,56 +8,117 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="css/main.css">
     <title>Guía Hoteles</title>
 </head>
 
 <body>
     <div class="jumbotron">
         <h1 class="text-center">Consideraciones Para Elegir Un Hotel</h1>
-        <div class="container-sm">
-            <div class="row">
-                <div class="col">
-                    <h3 class="text-center">Caja Fuerte</h3>
-                    <p class="text-justify">Muchos turistas prefieren viajar sintiendo que su presupuesto está protegido, si bien aquellos más despreocupados también deberían plantearse hospedarse en un hotel que incluya servicios de caja fuerte. Especialmente si viajas con altas cantidades o debes hacer un elevado pago inminente, si llevas dinero de la empresa en metálico o si prefieres distribuir el presupuesto en varios sitios para asegurarte cierta estabilidad en caso de robo, una caja fuerte en un hotel nunca sobra.</p>
+    </div>
+    <div class="container-sm">
+        <div class="row">
+            <div class="col">
+                <h3 class="text-center">Caja Fuerte</h3>
+                <p class="text-justify">Muchos turistas prefieren viajar sintiendo que su presupuesto está protegido, si
+                    bien aquellos más despreocupados también deberían plantearse hospedarse en un hotel que incluya
+                    servicios de caja fuerte. Especialmente si viajas con altas cantidades o debes hacer un elevado pago
+                    inminente, si llevas dinero de la empresa en metálico o si prefieres distribuir el presupuesto en
+                    varios sitios para asegurarte cierta estabilidad en caso de robo, una caja fuerte en un hotel nunca
+                    sobra.</p>
+            </div>
+            <div class="col">
+                <h3 class="text-center">Limpieza</h3>
+                <p class="text-justify">La limpieza es vital, Las fotos de cualquier sitio web de un hotel pueden ser
+                    algo engañosas, ofreciendo un aspecto que apenas se corresponde con el resultado que encontrarás al
+                    llegar. Consultar las opiniones del alojamiento te ayudará a apoyar esa ligera intuición de que
+                    estás a punto de hospedarte en un mar de ácaros, duchas rotas y baños de dudosa higiene.</p>
+            </div>
+            <div class="col">
+                <h3 class="text-center">Wi-FI</h3>
+                <p class="text-justify">
+                    Internet es un recurso que se convierte en una herramienta esencial a la hora de hacer reservas,
+                    gestionar rutas, encontrar guías o descargar material audiovisual. Asegúrate que el hotel elegido
+                    dispone de red wifi (si está incluida en la habitación mucho mejor) es un requisito básico a la hora
+                    de alojarte en cualquier parte del mundo.
+                </p>
+            </div>
+        </div>
+        <!-- Parte media baja-->
+        <div class="d-flex flex-wrap">
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="text-center">Otros Factores</h3>
+                    <p>Ubicación, presupuesto, nivel de atención, cocina y bebidas, más ...</p>
                 </div>
-                <div class="col">
-                    <h3 class="text-center">Limpieza</h3>
-                    <p class="text-justify">La limpieza es vital, Las fotos de cualquier sitio web de un hotel pueden ser algo engañosas, ofreciendo un aspecto que apenas se corresponde con el resultado que encontrarás al llegar. Consultar las opiniones del alojamiento te ayudará a apoyar esa ligera intuición de que estás a punto de hospedarte en un mar de ácaros, duchas rotas y baños de dudosa higiene.</p>
-                </div>
-                <div class="col">
-                    <h3 class="text-center">Wi-FI</h3>
-                    <p class="text-justify">
-                        Internet es un recurso que se convierte en una herramienta esencial a la hora de hacer reservas, gestionar rutas, encontrar guías o descargar material audiovisual. Asegúrate que el hotel elegido dispone de red wifi (si está incluida en la habitación mucho mejor) es un requisito básico a la hora de alojarte en cualquier parte del mundo.
-                    </p>
+                <div>
+                    <button type="button" class="btn btn-info btn-block btn-reserva">Más Información</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-4 offset-1">
-                    <h3 class="text-center">Otros Factores</h3>
-                    <ul>
-                        <li><p>Ubicación.</p></li>
-                        <li><p>Presupuesto.</p></li>
-                        <li><p>Nivel de atención.</p></li>
-                        <li><p>Cocina y bebidas.</p></li>
-                        <li><p>Otros ...</p></li>
-                    </ul>
-                    <button type="button" class="btn btn-info btn-block">Más Información</button>
-                </div>
-                <div class="col-4 offset-2">
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
                     <h3 class="text-center">Tipos de Hotel</h3>
-                    <ul>
-                        <li><p>Familiares.</p></li>
-                        <li><p>De playa.</p></li>
-                        <li><p>Tipo posada</p></li>
-                        <li><p>De aeropuerto</p></li>
-                        <li><p>Otros ...</p></li>
-                    </ul>
-                    <button type="button" class="btn btn-info btn-block">Más Información</button>
+                    <p>Familiares, de palaya, tipo posada, de aeropuerto, más ...</p>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-info btn-block btn-reserva">Más Información</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="text-center">Ubicaciones</h3>
+                    <p>América del Norte, Centro America, Caribe, Suramerica, Europa, Asia, ...</p>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-info btn-block btn-reserva">Más Información</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="text-center">Paises</h3>
+                    <p>Colombia, Argentina, Ecuador, Perú, Brasil, Mexico, Canada, Chile, España, Francia, Alemania,
+                        Suecia,
+                        Noruega, Polonia, Suiza, Turquia, Egipto, Nigeria, Sudafrica, ...</p>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-info btn-block btn-reserva">Más Información</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="text-center">Planes Para Vacacionar</h3>
+                    <p>Bucueo, escalada, senderismo, rumba, compras, visitar sitios historicos o museos, ...</p>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-info btn-block btn-reserva">Más Información</button>
                 </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="row">
+            <div class="col-4 d-flex flex-column text-right">
+                <a href="http://www.facebook.com">Facebook</a>
+                <a href="http://www.twitter.com">Twitter</a>
+                <a href="http://www.instagram.com">Instagram</a>
+                <a href="http://www.google.com">Google</a>
+            </div>
+            <div class="col-4 d-flex flex-column text-center">
+                <address>
+                    <h4>Oficina central</h4>
+                    <p>Springfield, Calle Falsa, Avenida 123.</p>
+                    <p>Tel +123 4567890</p>
+                    <p>Contacto: persona@hoteles.com</p>
+                </address>
+            </div>
+            <div class="col-4 d-flex flex-column text-left">
+                <a href="#">Nosotros</a>
+                <a href="#">Precios</a>
+                <a href="#">Terminos y Condiciones</a>
+                <a href="#">FAQ</a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

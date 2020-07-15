@@ -1,18 +1,8 @@
 .jumbotron {
-    background-color: #17A2B8;
+    background-color: #117180;
     color: white;
     text-shadow: 1px 1px 2px grey;
     margin-top: 50px;
-}
-
-.card-hotel {
-    flex: 1 150px;
-    /*flex grow: que tanto puede crecer (1, 2 ,3 veces); flex bassis: tamaño*/
-    padding: 5px;
-}
-
-.btn-reserva{
-    border-color: #043C44;
 }
 
 a {
@@ -21,8 +11,22 @@ a {
 }
 
 footer {
-    background-color: #17A2B8;
+    background-color: #117180;
     margin-top: 10px;
     padding: 25px 10px;
-    text-shadow: 1px 1px 2px grey;
+    text-shadow: 1px 1px 2px #ffffff;
+}
+
+.card-hotel {
+    flex: 1 150px;
+    /*flex grow: que tanto puede crecer (1, 2 ,3 veces); flex bassis: tamaño*/
+    padding: 5px;
+}
+
+.btn-reserva {
+    border-color: #043C44;
+}
+
+.footer-address-icon {
+    padding-right: 10px;
 }

@@ -13,34 +13,50 @@
 </head>
 
 <body>
+    <!-- fixed-top: fija la barra para que se mueva con el scroll. navbar: Crea la barra de navegación. navbar-dark: estilo para usar con colores oscuros. -->
+    <!-- navbar-expand-lg: el contenido de este navbar se contrae cuando la ventana es menor al tamaño especificado (lg). -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Hoteles</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- collapse:  navbar-collapse -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <!-- nav-item: -->
+                <!-- avtive: resalta el enlace "Home". Se usa para resaltar que estamos en esta página. -->
+                <!-- nav-link: le quita la apariencia de enlace (a), le da la apariencia final. -->
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Términos y condiciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contáctenos</a></li>
+                <li><a class="nav-link" href="#">Prueba</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="jumbotron">
-        <h1 class="text-center">Consideraciones Para Elegir Un Hotel</h1>
+        <h1 class="text-center">Página Hotel (en construcción)</h1>
     </div>
     <div class="container-sm">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+            </ol>
+        </nav>
         <div class="row">
             <div class="col">
-                <h3 class="text-center">Caja Fuerte</h3>
-                <p class="text-justify">Muchos turistas prefieren viajar sintiendo que su presupuesto está protegido, si
-                    bien aquellos más despreocupados también deberían plantearse hospedarse en un hotel que incluya
-                    servicios de caja fuerte. Especialmente si viajas con altas cantidades o debes hacer un elevado pago
-                    inminente, si llevas dinero de la empresa en metálico o si prefieres distribuir el presupuesto en
-                    varios sitios para asegurarte cierta estabilidad en caso de robo, una caja fuerte en un hotel nunca
-                    sobra.</p>
+                <h3 class="text-center">¿Cómo funciona?</h3>
+                <p class="text-justify">Busca planes de acudero a tus preferencias.</p>
             </div>
             <div class="col">
-                <h3 class="text-center">Limpieza</h3>
-                <p class="text-justify">La limpieza es vital, Las fotos de cualquier sitio web de un hotel pueden ser
-                    algo engañosas, ofreciendo un aspecto que apenas se corresponde con el resultado que encontrarás al
-                    llegar. Consultar las opiniones del alojamiento te ayudará a apoyar esa ligera intuición de que
-                    estás a punto de hospedarte en un mar de ácaros, duchas rotas y baños de dudosa higiene.</p>
+                <h3 class="text-center">¿Dónde puedo reservar</h3>
+                <p class="text-justify">Elija la ciudad que más le interese y luego haga la reservación con sus datos.</p>
             </div>
             <div class="col">
-                <h3 class="text-center">Wi-FI</h3>
+                <h3 class="text-center">Medios de pago</h3>
                 <p class="text-justify">
-                    Internet es un recurso que se convierte en una herramienta esencial a la hora de hacer reservas,
-                    gestionar rutas, encontrar guías o descargar material audiovisual. Asegúrate que el hotel elegido
-                    dispone de red wifi (si está incluida en la habitación mucho mejor) es un requisito básico a la hora
-                    de alojarte en cualquier parte del mundo.
+                    Se aceptan todas las tarjetas de crédito y débito.
                 </p>
             </div>
         </div>
@@ -48,8 +64,17 @@
         <div class="d-flex flex-wrap">
             <div class="card-hotel d-flex flex-column justify-content-between">
                 <div>
-                    <h3 class="text-center">Otros Factores</h3>
-                    <p>Ubicación, presupuesto, nivel de atención, cocina y bebidas, más ...</p>
+                    <h3 class="text-center">Planes de viaje</h3>
+                    <p>Plan vacacional, para parejas, familiares, turisticos, de trabajo y más ...</p>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-info btn-block btn-reserva">Más Información</button>
+                </div>
+            </div>
+            <div class="card-hotel d-flex flex-column justify-content-between">
+                <div>
+                    <h3 class="text-center">Planes Para Vacacionar</h3>
+                    <p>Bucueo, escalada, senderismo, rumba, compras, visitar sitios historicos o museos, ...</p>
                 </div>
                 <div>
                     <button type="button" class="btn btn-info btn-block btn-reserva">Más Información</button>
@@ -66,8 +91,8 @@
             </div>
             <div class="card-hotel d-flex flex-column justify-content-between">
                 <div>
-                    <h3 class="text-center">Ubicaciones</h3>
-                    <p>América del Norte, Centro America, Caribe, Suramerica, Europa, Asia, ...</p>
+                    <h3 class="text-center">Ciudades</h3>
+                    <p>Principales ciudades del país: Bogotá, Medellín, Cali, Cartagena, ...</p>
                 </div>
                 <div>
                     <button type="button" class="btn btn-info btn-block btn-reserva">Más Información</button>
@@ -75,19 +100,8 @@
             </div>
             <div class="card-hotel d-flex flex-column justify-content-between">
                 <div>
-                    <h3 class="text-center">Paises</h3>
-                    <p>Colombia, Argentina, Ecuador, Perú, Brasil, Mexico, Canada, Chile, España, Francia, Alemania,
-                        Suecia,
-                        Noruega, Polonia, Suiza, Turquia, Egipto, Nigeria, Sudafrica, ...</p>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-info btn-block btn-reserva">Más Información</button>
-                </div>
-            </div>
-            <div class="card-hotel d-flex flex-column justify-content-between">
-                <div>
-                    <h3 class="text-center">Planes Para Vacacionar</h3>
-                    <p>Bucueo, escalada, senderismo, rumba, compras, visitar sitios historicos o museos, ...</p>
+                    <h3 class="text-center">Comidas y bebidas</h3>
+                    <p>Cocina japonesa, francesa, española, latina, y más ...</p>
                 </div>
                 <div>
                     <button type="button" class="btn btn-info btn-block btn-reserva">Más Información</button>
@@ -115,7 +129,7 @@
                 <a href="#">Nosotros</a>
                 <a href="#">Precios</a>
                 <a href="#">Terminos y Condiciones</a>
-                <a href="#">FAQ</a>
+                <a href="#">Contáctenos</a>
             </div>
         </div>
     </footer>

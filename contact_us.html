@@ -16,16 +16,17 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Hoteles</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item active"><a class="nav-link" href="about.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
                 <li class="nav-item"><a class="nav-link" href="price.html">Precios</a></li>
                 <li class="nav-item"><a class="nav-link" href="conditions.html">Términos y condiciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact_us.html">Contáctenos</a></li>
+                <li class="nav-item active"><a class="nav-link" href="contact_us.html">Contáctenos</a></li>
             </ul>
         </div>
     </nav>
@@ -39,9 +40,51 @@
                 <li class="breadcrumb-item active text-primary" aria-current="page">Contáctenos</li>
             </ol>
         </nav>
-        <span>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora temporibus libero et eos assumenda, ipsum dolorem natus aperiam voluptates consequuntur commodi recusandae sint facilis id ducimus officiis accusantium corrupti odit.
-        </span>
+        <h2>Dejanos tus comentarios.</h2>
+        <form action="">
+            <div class="form-row">
+                <div class="form-group col-6">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresar Nombre">
+                </div>
+                <div class="form-group col-6">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" placeholder="Ingresar Apellido">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresar E-Mail">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-6">
+                    <label for="domicilio">Domicilio</label>
+                    <input type="text" class="form-control" id="domicilio" placeholder="Ingresar Domicilio">
+                </div>
+                <div class="form-group col-6">
+                    <label for="ciudad">Ciudad</label>
+                    <select id="ciudad" class="form-control">
+                        <option selected>Bogotá</option>
+                        <option>Medellín</option>
+                        <option>Cali</option>
+                        <option>Bucaramanga</option>
+                        <option>Cartagena</option>
+                        <option>Montería</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="comentario">Comentarios</label>
+                <textarea id="comentario" class="form-control"rows="10"></textarea>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="contactarme">
+                    <label for="contactarme" class="form-check-label">Quiero que me contacten</label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
     </div>
     <footer>
         <div class="row">

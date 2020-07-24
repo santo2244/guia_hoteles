@@ -4,7 +4,7 @@
     text-shadow: 2px 2px 2px black;
     margin-top: 50px;
     /* Para poner una imagen como background */
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0.9) 100%), url(../img/playa1\ -\ copia.jpg);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/playa1\ -\ copia.jpg);
     /* background-attachment: static; Aunque static no aparece en w3school, parece hacer lo mismo que scroll, es decir que no se mueve cuando se desplaza en la página */
     background-attachment: static;
     /* background-position: center; Ubicación en el contenedor, pueden ser dos, una vertical y otra orizontal */
@@ -13,7 +13,6 @@
     background-repeat: no-repeat;
     /* background-size: cover; con cover la imagen ocupa el contenedor de forma completa, ajustando su tamaño si es necesario */
     background-size: cover;
-    background-gra;
 }
 
 a {
@@ -28,16 +27,29 @@ footer {
     text-shadow: 1px 1px 2px #ffffff;
 }
 
-.card-hotel {
-    flex: 1 250px;
-    /*flex grow: que tanto puede crecer (1, 2 ,3 veces); flex bassis: tamaño*/
-    padding: 5px;
-}
-
 .btn-reserva {
     border-color: #043C44;
 }
 
+.card-hotel {
+    flex: 1 250px;
+    /*flex grow: que tanto puede crecer (1, 2 ,3 veces); flex bassis: tamaño*/
+    padding: 5px;
+    margin: 10px;
+}
+
 .footer-address-icon {
     padding-right: 10px;
+}
+.img1{
+    width: 500px;
+    height: 420px;
+}
+.img2{
+    width: 100px;
+    height: 120px;
+}
+
+.tab-content {
+    padding-top: 15px;
 }

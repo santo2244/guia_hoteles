@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+    <!-- build:css dist/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <!-- Cambiamos main.css por style.css creado con sass (scss) -->
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
     <!-- Libreria de iconos. Instalado con el comando npm install open-icon --save -->
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+    <!-- endbuild -->
     <title>Guía Hoteles</title>
 </head>
 
@@ -216,8 +220,8 @@
                 </div>
                 <!-- Contenedor con el botón para abrir la ventana de la sección modal -->
                 <div class="text-center">
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal"
-                        data-target="#contacto">Contacto</button>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto"
+                        id="contactoBtn">Contacto</button>
                 </div>
             </div>
         </div>
@@ -283,8 +287,8 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- build:js dist/index.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
@@ -293,9 +297,38 @@
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
             $('[data-toggle="popover"]').popover();
-            $('.carousel').carousel({interval:2000});
+            $('.carousel').carousel({
+                interval: 2000
+            });
+
+            /* No funcionó como esperaba*/
+            /* $('#contactoBtn').on('show.bs.modal', function (e) {
+                console.log('El modal se esta mostrando 1');
+            }); */
+            /* Estos si funcionaron */
+            $('#contacto').on('show.bs.modal', function(e){
+                console.log('El modal se muestra');
+                $('#contactoBtn').removeClass('btn-outline-success');
+                $('#contactoBtn').addClass('btn-primary');
+                $('#contactoBtn').prop('disabled', true);
+            });
+            $('#contacto').on('shown.bs.modal', function(e){
+                console.log('El modal se mostró');
+            });
+            $('#contacto').on('hide.bs.modal', function(e){
+                console.log('El modal se oculta');
+            });
+            $('#contacto').on('hidden.bs.modal', function(e){
+                console.log('El modal se ocultó');
+                $('#contactoBtn').removeClass('btn-primary');
+                $('#contactoBtn').addClass('btn-outline-success');
+                $('#contactoBtn').prop('disabled', false);
+            });
         });
     </script>
+    <!-- endbuild -->
 </body>
 
 </html>
+
+<!-- <script src="node_modules/popper.js/dist/popper.min.js"></script> -->

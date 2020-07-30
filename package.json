@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/santo2244/guia_hoteles#readme",
   "devDependencies": {
+    "clean-css": "^4.2.3",
     "copyfiles": "^2.3.0",
     "cssmin": "^0.4.3",
     "htmlmin": "0.0.7",

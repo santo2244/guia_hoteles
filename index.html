@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <!-- build:css dist/index.css -->
+    <!-- build:css css/index.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <!-- Cambiamos main.css por style.css creado con sass (scss) -->
-    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <!-- Cambiamos el main.css por style.css, creado con sass (scss) -->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Libreria de iconos. Instalado con el comando npm install open-icon --save -->
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
@@ -287,45 +286,12 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- build:js dist/index.js -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
     <!-- Script para la activacion de Tooltip -->
-    <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-            $('[data-toggle="popover"]').popover();
-            $('.carousel').carousel({
-                interval: 2000
-            });
-
-            /* No funcionó como esperaba*/
-            /* $('#contactoBtn').on('show.bs.modal', function (e) {
-                console.log('El modal se esta mostrando 1');
-            }); */
-            /* Estos si funcionaron */
-            $('#contacto').on('show.bs.modal', function(e){
-                console.log('El modal se muestra');
-                $('#contactoBtn').removeClass('btn-outline-success');
-                $('#contactoBtn').addClass('btn-primary');
-                $('#contactoBtn').prop('disabled', true);
-            });
-            $('#contacto').on('shown.bs.modal', function(e){
-                console.log('El modal se mostró');
-            });
-            $('#contacto').on('hide.bs.modal', function(e){
-                console.log('El modal se oculta');
-            });
-            $('#contacto').on('hidden.bs.modal', function(e){
-                console.log('El modal se ocultó');
-                $('#contactoBtn').removeClass('btn-primary');
-                $('#contactoBtn').addClass('btn-outline-success');
-                $('#contactoBtn').prop('disabled', false);
-            });
-        });
-    </script>
+    <script src="js/index.js"></script>
     <!-- endbuild -->
 </body>
 

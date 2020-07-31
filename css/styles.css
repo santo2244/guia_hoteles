@@ -11,36 +11,47 @@
   background-attachment: static;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+}
 
 a {
-  color: white; }
+  color: white;
+}
 
 footer {
-  background-color: #117180;
+  background-color: #1171ee;
   margin-top: 10px;
   margin-bottom: 0px;
   padding: 25px 10px;
-  text-shadow: 1px 1px 2px #ffffff; }
+  text-shadow: 1px 1px 2px #ffffff;
+}
 
 .btn-reserva {
-  border-color: #043C44; }
+  border-color: #043C44;
+}
 
 .card-hotel {
   flex: 1 250px;
   padding: 5px;
-  margin: 10px; }
+  margin: 10px;
+}
 
 .footer-address-icon {
-  padding-right: 10px; }
+  padding-right: 10px;
+}
 
 .img1 {
   width: 500px;
-  height: 420px; }
+  height: 420px;
+}
 
 .img2 {
   width: 100px;
-  height: 120px; }
+  height: 120px;
+}
 
 .tab-content {
-  padding-top: 15px; }
+  padding-top: 15px;
+}
+
+/*# sourceMappingURL=styles.css.map */
